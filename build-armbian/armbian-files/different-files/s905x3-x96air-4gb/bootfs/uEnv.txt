@@ -1,0 +1,20 @@
+LINUX=/zImage
+INITRD=/uInitrd
+FDT=/dtb/amlogic/meson-sm1-x96-air-4g-gbit.dtb
+APPEND=root=UUID=5b0b1cfd-e5ce-4eaf-a5a4-4961183b3f7d rootflags=data=writeback rw rootfstype=ext4 console=ttyAML0,115200n8 console=tty0 no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
+
+#autoflash ID
+#==================S905W===================================================
+#101  :X96-Mini   :s905w    meson-gxl-s905w-p281.dtb          100M
+
+#==================S922X===================================================
+#201  :X96-X9     :s922x    meson-g12b-x96-x9.dtb             100M   AP6256
+#202  :X96-X9     :s922x    meson-g12b-x96-x9-gbit.dtb        1Gb    AP6256
+
+#==================S905X3 2G Memory========================================
+#301  :X96-Air    :s905x3   meson-sm1-x96-air.dtb             100M   rtl8822cs/rtl8189ftv
+#302  :X96-Air    :s905x3   meson-sm1-x96-air-gbit.dtb        1Gb    rtl8822cs/rtl8189ftv
+
+#==================S905X3 4G Memory========================================
+#303  :X96-Air    :s905x3   meson-sm1-x96-air-4g.dtb          100M   rtl8822cs/rtl8189ftv
+#304  :X96-Air    :s905x3   meson-sm1-x96-air-4g-gbit.dtb     1Gb    rtl8822cs/rtl8189ftv
